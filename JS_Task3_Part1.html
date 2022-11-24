@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //--------------------------------------Login---------------------------------------------------------//
+
+        var username = prompt("Enter Your Username");
+        console.log(username);
+        var password = prompt("Enter Your Password");
+        console.log(password);
+
+        if (username == "admin" && password == "421$$") {
+            alert("Welcome,login is success");
+        }
+        else if (username == "admin" && password != "421$$") {
+            alert("Password you entered is wrong");
+        }
+        else if (username != "admin" && password == "421$$") {
+            alert("username you entered is wrong");
+        }
+        else{
+            alert("Data you entered is wrong");
+        }
+
+
+        //-----------------------------------------------Calc---------------------------------------------------//
+
+        var firstNum = Number(prompt("Enter first Number"));
+        console.log(firstNum);
+
+        var choise = prompt("press sum(+) || multi(*) || sub(-) || division(/) || moduls(%) ");
+        console.log(choise);
+
+        var secondNum = Number(prompt("Enter second Number"));
+        console.log(secondNum);
+
+        var result = 0;
+
+
+        // function sum(a, b){
+        //     return alert(`Your Result is ${a + b}`);
+        // }
+        // function multi(a, b) {
+        //     return alert(`Your Result is ${a * b}`);
+        // }
+        // function div(a, b) {
+        //     return alert(`Your Result is ${a / b}`);
+        // }
+        // function sub(a, b) {
+        //     return alert(`Your Result is ${a - b}`);
+        // }
+        // function mod(a, b) {
+        //     return alert(`Your Result is ${a % b}`);
+        // }
+
+
+        switch (choise) {
+            case "+":
+                result = firstNum + secondNum;
+                alert(`Your result is ${result}`);
+                console.log(result);
+                break;
+
+            case "*":
+                result = firstNum * secondNum;
+                alert(`Your result is ${result}`);
+                console.log(result);
+                break;
+
+            case "-":
+                result = firstNum - secondNum;
+                alert(`Your result is ${result}`);
+                console.log(result);
+                break;
+
+            case "/":
+                result = firstNum / secondNum;
+                alert(`Your result is ${result}`);
+                console.log(result);
+                break;
+
+            case "%":
+                result = firstNum % secondNum;
+                alert(`Your result is ${result}`);
+                console.log(result);
+                break;
+
+            default:
+                console.log("something was wrong");
+                break;
+
+        }
+        // console.log("end");        //for debugging  
+        // console.log(result);
+
+        var stop = false;
+        while (!stop) {
+            var repeat = prompt("Do another Operation or not");
+            if (repeat == null) {
+                alert("Canceled");
+                stop = true;
+            }
+            else {
+                var num = Number(prompt("Enter a number"));
+
+                switch (repeat) {
+                    case "+":
+                        // result =sum(result, num);
+                        alert(`Your result is ${result += num}`);
+                        console.log(result);
+                        break;
+
+                    case "*":
+                        alert(`Your result is ${result *= num}`);
+                        console.log(result);
+                        break;
+
+                    case "-":
+                        alert(`Your result is ${result -= num}`);
+                        console.log(result);
+                        break;
+
+                    case "/":
+                        alert(`Your result is ${result /= num}`);
+                        console.log(result);
+                        break;
+
+                    case "%":
+                        alert(`Your result is ${result %= num}`);
+                        console.log(result);
+                        break;
+                }
+
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
