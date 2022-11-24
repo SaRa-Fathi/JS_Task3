@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //--------------------------------------------//
+        var res = Number(prompt("How many numbers do you want to calculate ?"));
+        console.log(res);
+
+        var arr = [];
+        var num;
+        for (var i = 0; i < res; i++) {
+            arr[i] = Number(prompt(num));
+        }
+        console.log(arr);
+
+        var sum = 0;
+        for (var i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        var avr = sum / arr.length;
+
+        alert(`Array sum is =  ${sum} ,and Array Average is = ${avr}`);
+
+       //-----------------------------------------------------------------//
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
