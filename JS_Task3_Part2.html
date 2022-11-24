@@ -8,7 +8,8 @@
     <title>Document</title>
 
     <script>
-        //--------------------------------------------//
+        //--------------------------------Sum & Average-------------------------------//
+        
         var res = Number(prompt("How many numbers do you want to calculate ?"));
         console.log(res);
 
@@ -27,7 +28,61 @@
 
         alert(`Array sum is =  ${sum} ,and Array Average is = ${avr}`);
 
-       //-----------------------------------------------------------------//
+        //----------------------------------Phone Book---------------------------------//
+
+        var contacts = [
+            {
+                name: "sara",
+                phone: "01234"
+            },
+            {
+                name: "ahmed",
+                phone: "01256"
+            }
+        ]
+
+        function addNewContact() {
+            var newContact = {}
+            newContact.name = prompt("Enter Contact Name");
+            newContact.phone = prompt("Enter Contact Phone");
+            contacts.push(newContact);
+        }
+
+        function searchForContact() {
+            var searchKeyword = prompt("Enter Name or Phone");
+
+            for (var i = 0; i < searchKeyword.length; i++) {
+                var currentContact = contacts[i];
+                if (searchKeyword == currentContact.name || searchKeyword == currentContact.phone) {
+                    alert(`Name : ${currentContact.name} and Phone : ${currentContact.phone}`);
+                    break;
+                }
+            }
+        }
+        function RunBook() {
+            var stop = false;
+            do {
+                var choise = prompt("Do you want to Add or Search for contact ot Exit");
+                console.log(choise);
+
+
+                switch (choise) {
+                    case "add":
+                        addNewContact();
+                        break;
+
+                    case "search":
+                        searchForContact();
+                        break;
+
+                    case "exit":
+                        stop = true;
+                        alert("Exited");
+                        break;
+                }
+            } while (!stop)
+        }
+        alert(RunBook());
 
 
     </script>
