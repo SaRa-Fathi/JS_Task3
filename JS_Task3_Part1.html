@@ -29,7 +29,7 @@
         }
 
 
-        //-----------------------------------------------Calc---------------------------------------------------//
+        //-----------------------------------------------Calc with Bonus---------------------------------------------------//
 
         var firstNum = Number(prompt("Enter first Number"));
         console.log(firstNum);
@@ -102,10 +102,12 @@
         var stop = false;
         while (!stop) {
             var repeat = prompt("Do another Operation or not");
+
             if (repeat == null) {
                 alert("Canceled");
                 stop = true;
             }
+
             else {
                 var num = Number(prompt("Enter a number"));
 
