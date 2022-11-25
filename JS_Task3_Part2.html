@@ -60,7 +60,7 @@
                     alert(`Name : ${currentContact.name} and Phone : ${currentContact.phone}`);
                     break;
                 }
-                else{
+                else {
                     alert("This Contact is Not Found");
                     break;
                 }
@@ -74,8 +74,8 @@
 
                 if (choise == null) {
                     alert("Canceled");
-                    stop= true;
-                    }
+                    stop = true;
+                }
 
 
                 switch (choise) {
@@ -96,136 +96,136 @@
         }
         RunBook();
 
-    //-----------------------------Bonus(Calc Arae)----------------------------------------------//
-    alert("Calculate Area Program");
+        //-----------------------------Bonus(Calc Arae)----------------------------------------------//
+        alert("Calculate Area Program");
 
-    var area=0;
-    function circleArea(radius){
-        var radius=prompt("Enter the Radius of the Circle");
-        console.log(radius);
+        var area = 0;
+        function circleArea(radius) {
+            var radius = prompt("Enter the Radius of the Circle");
+            console.log(radius);
 
-        area=(22/7)*radius*radius;
-        return alert(`The Circle Area is = ${area}`);
-    }
+            area = (22 / 7) * radius * radius;
+            return alert(`The Circle Area is = ${area}`);
+        }
 
-    function triangleArea(base,height){
-        var base=prompt("Enter the base of the Triangle");
-        console.log(base);
+        function triangleArea(base, height) {
+            var base = prompt("Enter the base of the Triangle");
+            console.log(base);
 
-        var height=prompt("Enter the height of the Triangle");
-        console.log(height);
+            var height = prompt("Enter the height of the Triangle");
+            console.log(height);
 
-        area=(1/2)*base*height;
-        return alert(`The Triangle Area is = ${area}`);
-    }
+            area = (1 / 2) * base * height;
+            return alert(`The Triangle Area is = ${area}`);
+        }
 
-    function squareArea(sideLength){
-        var sideLength=prompt("Enter the side length of the Square");
-        console.log(sideLength);
+        function squareArea(sideLength) {
+            var sideLength = prompt("Enter the side length of the Square");
+            console.log(sideLength);
 
-        area=sideLength*sideLength;
-        return alert(`The Square Area is = ${area}`);
-    }
+            area = sideLength * sideLength;
+            return alert(`The Square Area is = ${area}`);
+        }
 
-    function rectangleArea(length,width){
-        var length=prompt("Enter the length of the Rectangle");
-        console.log(length);
+        function rectangleArea(length, width) {
+            var length = prompt("Enter the length of the Rectangle");
+            console.log(length);
 
-        var width=prompt("Enter the width of the Rectangle");
-        console.log(width);
+            var width = prompt("Enter the width of the Rectangle");
+            console.log(width);
 
-        area=length*width;
-        return alert(`The Rectangle Area is = ${area}`);
-    }
+            area = length * width;
+            return alert(`The Rectangle Area is = ${area}`);
+        }
 
-    function parallelogramArea(base,vertical_height){
-        var base=prompt("Enter the base of the Parallelogram");
-        console.log(base);
+        function parallelogramArea(base, vertical_height) {
+            var base = prompt("Enter the base of the Parallelogram");
+            console.log(base);
 
-        var vertical_height=prompt("Enter the vertical height of the Parallelogram");
-        console.log(vertical_height);
+            var vertical_height = prompt("Enter the vertical height of the Parallelogram");
+            console.log(vertical_height);
 
-        area=base*vertical_height;
-        return alert(`The Parallelogram Area is = ${area}`);
-    }
+            area = base * vertical_height;
+            return alert(`The Parallelogram Area is = ${area}`);
+        }
 
-    function trapeziumArea(length1,length2,hight){
-        var length1=Number(prompt("Enter the parallel side length of the Trapezium"));
-        console.log(length1);
+        function trapeziumArea(length1, length2, hight) {
+            var length1 = Number(prompt("Enter the parallel side length of the Trapezium"));
+            console.log(length1);
 
-        var length2=Number(prompt("Enter the other parallel side length of the Trapezium"));
-        console.log(length2);
+            var length2 = Number(prompt("Enter the other parallel side length of the Trapezium"));
+            console.log(length2);
 
-        var hight=Number(prompt("Enter the height of the Trapezium"));
-        console.log(hight);
+            var hight = Number(prompt("Enter the height of the Trapezium"));
+            console.log(hight);
 
-        var totaLength=Number((length1 + length2));
-        area=(1/2) * totaLength *hight;
-        return alert(`The Trapezium Area is = ${area}`);
-    }
+            var totaLength = Number((length1 + length2));
+            area = (1 / 2) * totaLength * hight;
+            return alert(`The Trapezium Area is = ${area}`);
+        }
 
-    function ellipseArea(minorAxis,majorAxis){
-        var minorAxis=prompt("Enter the minor axis of the Ellipse");
-        console.log(minorAxis);
+        function ellipseArea(minorAxis, majorAxis) {
+            var minorAxis = prompt("Enter the minor axis of the Ellipse");
+            console.log(minorAxis);
 
-        var majorAxis=prompt("Enter the major axis of the Ellipse");
-        console.log(majorAxis);
+            var majorAxis = prompt("Enter the major axis of the Ellipse");
+            console.log(majorAxis);
 
-        area=(22/7)*(1/4)*minorAxis*majorAxis;
-        return alert(`The Ellipse Area is = ${area}`);
-    }
+            area = (22 / 7) * (1 / 4) * minorAxis * majorAxis;
+            return alert(`The Ellipse Area is = ${area}`);
+        }
 
-    function calcArea(){
-        var exit=false;
-        do{
-            
-            var option=prompt("Enter the shape name you want to calc area for");
-            console.log(option);
+        function calcArea() {
+            var exit = false;
+            do {
 
-            if (option == null) {
+                var option = prompt("Enter the shape name you want to calc area for");
+                console.log(option);
+
+                if (option == null) {
                     alert("Canceled");
-                    exit= true;
-                    }
+                    exit = true;
+                }
 
-            switch(option){
-                case "circle":
-                    circleArea();
-                    break;
+                switch (option) {
+                    case "circle":
+                        circleArea();
+                        break;
 
-                case "triangle":
-                    triangleArea();
-                    break;   
+                    case "triangle":
+                        triangleArea();
+                        break;
 
-                case "square":
-                    squareArea();
-                    break;
-                    
-                case "rectangle":
-                    rectangleArea();
-                    break;
-                    
-                case "parallelogram":
-                    parallelogramArea();
-                    break;
-                    
-                case "trapezium":
-                    trapeziumArea();
-                    break;
-                    
-                case "ellipse":
-                    ellipseArea();
-                    break;
+                    case "square":
+                        squareArea();
+                        break;
 
-                case "exit":
-                    exit=true;
-                    alert("Exited")
-                    break;    
+                    case "rectangle":
+                        rectangleArea();
+                        break;
 
-            }
-        }while(!exit)
-    
-    }
-    alert(calcArea());
+                    case "parallelogram":
+                        parallelogramArea();
+                        break;
+
+                    case "trapezium":
+                        trapeziumArea();
+                        break;
+
+                    case "ellipse":
+                        ellipseArea();
+                        break;
+
+                    case "exit":
+                        exit = true;
+                        alert("Exited")
+                        break;
+
+                }
+            } while (!exit)
+
+        }
+        alert(calcArea());
 
 
 
